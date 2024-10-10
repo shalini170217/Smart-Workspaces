@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Workspaces</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.nav1 i{
+    padding-left:10px;
+}
+.nav2 button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color:darkslategray;
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+padding-bottom: 15px;
+background-color:black;
+color: white;
+}
+.main img{
+    width: 100%;
+    height: 650px;
+    opacity: 0.7;
+    z-index: 1;
+}
+.main .text{
+position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-52%, -52%);
+  font-size: 30px; 
+  color: black; 
+}
+.text p{
+    font-size: 40px;
+    background-color:beige;
+    opacity: 0.7;
+    text-align: center;
+}
+.text i{
+    padding: 6px;
+}
+.b1{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 20PX;
+    padding-right: 20PX;
+    text-align: center; 
+    font-size: 30px;
+    margin-top: 13px;
+    color: white;
+    margin-left: 210px;
+    background-color:darkslategray;
+    
+}
+
+    </style>
+</head>
+<body>
+    <!--nav bar-->
+ <div class="navbar">
+    <div class="nav1">
+        <h1>Smart Workspaces<i class="fa-solid fa-book-open-reader"></i></h1>
+    </div>
+    <div class="nav2">
+        <button>Sign in</button>
+        <button>Contact Us</button>
+    </div>
+ </div>  
+ <!--main-->
+ <div class="main">
+    <img src="img1.jpg">
+    <div class="text">
+        <p>Welcome to Smart Workspaces</p>
+        <button class="b1"  ><i class="fa-solid fa-face-smile"></i><a href="login.html" style="text-decoration: none;color:white;">Get Started</a><i class="fas fa-arrow-right"></i></button><br>
+        
+    </div>
+ </div> 
+  
+</body>
+</html>

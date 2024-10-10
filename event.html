@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: auto;
+        }
+        .event-form input,
+        .event-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .event-form button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .event-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body style="background-color: cadetblue;">
+    <div class="navbar">
+        <h1>Smart Workspaces</h1>
+        <div>
+            <button>Sign in</button>
+            <button>Contact Us</button>
+        </div>
+    </div>
+    <div class="form-container">
+        <h1>Event Announcement Form</h1>
+        <form class="event-form" id="eventForm" action="/submit" method="POST">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+            <label for="eventArea">Event Area:</label>
+            <input type="text" id="eventArea" name="eventArea" required>
+            <label for="guest">Guest:</label>
+            <input type="text" id="guest" name="guest" required>
+            <label for="targetAudience">Target Audience:</label>
+            <input type="text" id="targetAudience" name="targetAudience" required>
+            <label for="totalSeats">Total Seats:</label>
+            <input type="number" id="totalSeats" name="totalSeats" required>
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+            <label for="payment">Payment Method:</label>
+            <input type="text" id="payment" name="payment" required>
+            <label for="timing">Timing:</label>
+            <input type="text" id="timing" name="timing" required>
+            <label for="additionalInfo">Additional Info:</label>
+            <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+</body>
+</html>

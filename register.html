@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: auto;
+        }
+        .event-form input,
+        .event-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .event-form button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .event-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body style="background-color: azure;">
+    
+    <div class="navbar">
+        <h1>Smart Workspaces</h1>
+        <div>
+            <button>Sign in</button>
+            <button>Contact Us</button>
+        </div>
+    </div>
+    <div class="form-container">
+        <h1>Event Registration Form</h1>
+        <form class="event-form" id="registrationForm" action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="registrationNumber">Registration Number:</label>
+            <input type="text" id="registrationNumber" name="registrationNumber" required>
+            
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+            
+            <label for="currentYear">Current Year:</label>
+            <input type="text" id="currentYear" name="currentYear" required>
+            
+            <label for="paymentTransactionId">Payment Transaction ID:</label>
+            <input type="text" id="paymentTransactionId" name="paymentTransactionId" required>
+            
+            <label for="collegeName">College Name:</label>
+            <input type="text" id="collegeName" name="collegeName" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
